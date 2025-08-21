@@ -83,3 +83,23 @@ The overall pipeline for preparing aligned event/video data and labels:
 6) Transfer labels and visualize with `data_processing/transfer_labels.py`
 
 
+### Plotting loss curves
+
+Use the provided script to visualize training/validation losses from a JSON log:
+
+```bash
+python loss_curves.py path/to/log.json --smooth 3 --show
+```
+
+As an example with your naming preference:
+
+```bash
+python plot_losses.py log.json --smooth 3 --show
+```
+
+Notes:
+- `json_path`: path to the JSON log containing `train_loss` and/or `validation_loss` arrays; optional fields like `Tau` are shown in the title if present.
+- `--smooth`: moving average window size (epochs), e.g., `--smooth 3`.
+- `--show`: open an interactive window after saving the figure.
+- `--save path/to/fig.png` (optional): override the output path; by default it saves next to the JSON as `*.losses.png`.
+
