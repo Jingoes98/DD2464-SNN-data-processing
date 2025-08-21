@@ -3,6 +3,7 @@
 
 # Keep these files and directories
 !/.gitignore
+!/README.md
 !/data_processing/
 !/H_matrix/
 !/time_alignments/

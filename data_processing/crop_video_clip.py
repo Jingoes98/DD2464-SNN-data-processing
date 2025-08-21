@@ -9,10 +9,10 @@ output_video_path = os.path.join(output_video_dir, f"cropped_clip_{clip_id}.mp4"
 top_left = (580, 530)  # (x, y) coordinates of the top-left corner of the crop box
 crop_size = (640, 640)  # (width, height) of the crop box
 crop_video_clip(
-    input_video_path=input_video_path,           # 原始 video clip 路径
-    output_video_path=output_video_path,  # 保存裁剪后视频路径
-    top_left=top_left,                                   # 裁剪框左上角坐标 (x, y)
-    crop_size=crop_size,                                  # 裁剪框尺寸 (width, height)                                      # （可选）最多处理前 1000 帧
+    input_video_path=input_video_path, # dir to video clips
+    output_video_path=output_video_path, # dir to save the cropped video clips
+    top_left=top_left, # (x, y)
+    crop_size=crop_size, # (width, height)    
 )
 
 # Convert the top-left corner and crop size to event frame coordinates
