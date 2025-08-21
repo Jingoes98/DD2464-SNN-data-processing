@@ -1,0 +1,37 @@
+# Ignore everything at the repository root
+/*
+
+# Keep these files and directories
+!/.gitignore
+!/data_processing/
+!/H_matrix/
+!/time_alignments/
+!/data_loading.py
+!/snn_final_model.py
+!/requirements.txt
+
+# Within kept directories, ignore common junk/caches
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+*.dylib
+*.dll
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+*.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.venv/
+venv/
+.idea/
+.vscode/
+*.code-workspace
+
