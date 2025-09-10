@@ -1,10 +1,15 @@
 from utility import *
 import skimage.transform
 
-# This is a helper script for selecting kpts pairs in video/event frames to find homography matrix
+'''
+This is a helper script for selecting kpts pairs in video/event frames to find homography matrix
+How to use: Starting from the frame-based pic (left image), click on the keypoint pairs one by one. 
+For example: keypoint 1 in the left image, the same position point corresponding to keypoint 1 in the right image; 
+keypoint 2 in the left image, the same position point corresponding to keypoint 2 in the right image; and so on.
+'''
 #====================== Configuration =======================
 clip_id = 4 # index of clip
-frame_idx = 700 # index of frame
+frame_idx = 6 # index of frame
 # these settings should adjusted accordingly by your video frame cropping area
 video_size = 640 
 event_size = 300
